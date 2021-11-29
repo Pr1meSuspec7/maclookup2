@@ -18,6 +18,7 @@ def makelist():
 	makelist.maclist = []
 	for i in sys.argv:
 		makelist.maclist.append(i)
+	# [1:None] this excludes the "maclookup2.py" string from list
 	makelist.maclist = makelist.maclist[1:None]
 
 def maclookup():
